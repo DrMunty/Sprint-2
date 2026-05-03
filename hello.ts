@@ -27,4 +27,18 @@ function printCoord(pt: Point) {
  
 printCoord({ x: 100, y: 100 });
 
+//Interface
+
+interface Point1 {
+  x: number;
+  y: number;
+}
+ 
+function printCoord1(pt: Point1) {
+  console.log("The coordinate's x value is " + pt.x);
+  console.log("The coordinate's y value is " + pt.y);
+}
+ 
+printCoord1({ x: 100, y: 100 });
+
 export {};
