@@ -13,4 +13,18 @@ printId(101)
 printId("202")
 // printId({myID:2004}) Això no seria correcte ja que no s'ha especificat cap type.
 
+//Type Aliases
+
+type Point = {
+  x: number;
+  y: number;
+};
+ 
+function printCoord(pt: Point) {
+  console.log("The coordinate's x value is " + pt.x);
+  console.log("The coordinate's y value is " + pt.y);
+}
+ 
+printCoord({ x: 100, y: 100 });
+
 export {};
